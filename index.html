@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a passionate web developer focused on creating clean, efficient, and user-friendly applications.</p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <span>HTML5</span>
+                <span>CSS3 (Flexbox/Grid)</span>
+                <span>JavaScript (ES6+)</span>
+                <span>[Your Skill 4]</span>
+                <span>[Your Skill 5]</span>
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <article class="project-item">
+                    <h3>Project One</h3>
+                    <p>A description of your first project.</p>
+                </article>
+                <article class="project-item">
+                    <h3>Project Two</h3>
+                    <p>A description of your second project.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <small class="error-text" id="name-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error-text" id="email-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <small class="error-text" id="message-error"></small>
+                </div>
+                <button type="submit">Send Message</button>
+                <p id="form-success" style="display:none; color: green;"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
